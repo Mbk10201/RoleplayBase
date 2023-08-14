@@ -1,0 +1,347 @@
+{
+  "Title": "Roleplay",
+  "Type": "game",
+  "Org": "mbk",
+  "Ident": "roleplay",
+  "Tags": "\u0022fran\u00E7ais\u0022 rp roleplay french darkrp belgium serious garry",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "Resources": null,
+  "MenuResources": "code/UI/RootPanels/GameMenu/*\nfonts/*\nsounds/ui/ui.intro",
+  "HasCode": true,
+  "CodePath": "/code/",
+  "PackageReferences": [
+    "mbk.roleplay_api"
+  ],
+  "EditorReferences": null,
+  "Metadata": {
+    "MaxPlayers": 128,
+    "MinPlayers": 1,
+    "GameNetworkType": "Multiplayer",
+    "MapSelect": "Tagged",
+    "MapList": [],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
+    "ProjectTemplate": null,
+    "DefaultLeaderboards": null,
+    "ControlModes": {
+      "Keyboard": true
+    },
+    "GeneralExtensions": false,
+    "TargettedExtensions": false,
+    "ExtensionApiVersion": 1001,
+    "Summary": "French roleplay",
+    "Description": "Roleplay fran\u00E7ais en cours de d\u00E9veloppement.\n\nNous sommes en recherche de personnes comp\u00E9tantes \u00E0 rejoindre le d\u00E9veloppement de celui-ci.\n\nDiscord: https://discord.euro-community.be/",
+    "Public": true,
+    "Compiler": {
+      "RootNamespace": "RP",
+      "DefineConstants": "SANDBOX;ADDON;DEBUG",
+      "NoWarn": "1701;1702;1591;",
+      "References": [
+        "base"
+      ],
+      "DistinctReferences": [
+        "base"
+      ]
+    },
+    "Collision": {
+      "Defaults": {
+        "solid": "Collide",
+        "trigger": "Trigger",
+        "ladder": "Ignore",
+        "water": "Trigger",
+        "player": "Collide"
+      },
+      "Pairs": [
+        {
+          "a": "solid",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "playerclip",
+          "r": "Ignore"
+        },
+        {
+          "a": "trigger",
+          "b": "solid",
+          "r": "Trigger"
+        },
+        {
+          "a": "solid",
+          "b": "trigger",
+          "r": "Collide"
+        },
+        {
+          "a": "playerclip",
+          "b": "solid",
+          "r": "Collide"
+        },
+        {
+          "a": "solid",
+          "b": "water"
+        },
+        {
+          "a": "player",
+          "b": "player",
+          "r": "Collide"
+        },
+        {
+          "a": "solid",
+          "b": "player",
+          "r": "Collide"
+        },
+        {
+          "a": "trigger",
+          "b": "player",
+          "r": "Trigger"
+        },
+        {
+          "a": "ladder",
+          "b": "player",
+          "r": "Trigger"
+        },
+        {
+          "a": "water",
+          "b": "player",
+          "r": "Trigger"
+        }
+      ]
+    },
+    "SavedGames": false,
+    "MapDependentSaves": false,
+    "SaveFormatVersion": 1001,
+    "CsProjName": "Roleplay",
+    "ReplaceTags": "roleplay rp french quebec france belgique belgium serious world openworld sandbox",
+    "Physics": {
+      "SubSteps": 1,
+      "TimeScale": 1,
+      "Gravity": "0,0,-800",
+      "AirDensity": 1.2,
+      "SleepingEnabled": true,
+      "SimulationMode": "Continuous",
+      "PositionIterations": 2,
+      "VelocityIterations": 8,
+      "SoftBodyIterations": 1,
+      "SoftBodySubsteps": 1
+    },
+    "InputSettings": {
+      "Actions": [
+        {
+          "Name": "Forward",
+          "KeyboardCode": "W",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Backward",
+          "KeyboardCode": "S",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Left",
+          "KeyboardCode": "A",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Right",
+          "KeyboardCode": "D",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Jump",
+          "KeyboardCode": "space",
+          "GamepadCode": "A",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Run",
+          "KeyboardCode": "shift",
+          "GamepadCode": "LeftJoystickButton",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Walk",
+          "KeyboardCode": "alt",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "Duck",
+          "KeyboardCode": "ctrl",
+          "GamepadCode": "B",
+          "GroupName": "Movement"
+        },
+        {
+          "Name": "attack1",
+          "KeyboardCode": "mouse1",
+          "GamepadCode": "RightTrigger",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "attack2",
+          "KeyboardCode": "mouse2",
+          "GamepadCode": "LeftTrigger",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "reload",
+          "KeyboardCode": "r",
+          "GamepadCode": "X",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "use",
+          "KeyboardCode": "e",
+          "GamepadCode": "Y",
+          "GroupName": "Actions"
+        },
+        {
+          "Name": "Slot1",
+          "KeyboardCode": "1",
+          "GamepadCode": "DpadWest",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot2",
+          "KeyboardCode": "2",
+          "GamepadCode": "DpadEast",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot3",
+          "KeyboardCode": "3",
+          "GamepadCode": "DpadSouth",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot4",
+          "KeyboardCode": "4",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot5",
+          "KeyboardCode": "5",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot6",
+          "KeyboardCode": "6",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot7",
+          "KeyboardCode": "7",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot8",
+          "KeyboardCode": "8",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot9",
+          "KeyboardCode": "9",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "Slot0",
+          "KeyboardCode": "0",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "SlotPrev",
+          "KeyboardCode": "mouse4",
+          "GamepadCode": "SwitchLeftBumper",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "SlotNext",
+          "KeyboardCode": "mouse5",
+          "GamepadCode": "SwitchRightBumper",
+          "GroupName": "Inventory"
+        },
+        {
+          "Name": "View",
+          "KeyboardCode": "C",
+          "GamepadCode": "RightJoystickButton",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Voice",
+          "KeyboardCode": "v",
+          "GamepadCode": "RightJoystickButton",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Drop",
+          "KeyboardCode": "g",
+          "GamepadCode": "RightJoystickButton",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Tab",
+          "KeyboardCode": "tab",
+          "GamepadCode": "SwitchLeftMenu",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Menu",
+          "KeyboardCode": "A",
+          "GamepadCode": "SwitchRightMenu",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Chat",
+          "KeyboardCode": "enter",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "Inventory",
+          "KeyboardCode": "I",
+          "GamepadCode": "DpadNorth",
+          "GroupName": "Other"
+        },
+        {
+          "Name": "F4",
+          "KeyboardCode": "f4",
+          "GamepadCode": "LeftJoystickButton",
+          "GroupName": "Other"
+        }
+      ]
+    },
+    "HttpAllowList": [
+      "https://discord.com/api/",
+      "wss://gateway.discord.gg/",
+      "https://api.euro-community.be",
+      "https://localhost:7201",
+      "localhost:7201",
+      "http://localhost:7201"
+    ],
+    "TickRate": 128,
+    "LaunchConfigs": [
+      {
+        "Name": "Overijse",
+        "GameIdent": "mbk.roleplay#local",
+        "MapName": "eurorp.rp_overijse_v010",
+        "MaxPlayers": 8,
+        "GameSettings": {},
+        "Addons": "mbk.roleplay_chat#local;mbk.roleplay_hud#local;mbk.roleplay_tab#local;",
+        "PreLaunchCommand": "",
+        "PostLaunchCommand": ""
+      },
+      {
+        "Name": "Flatgrass",
+        "GameIdent": "mbk.roleplay#local",
+        "MapName": "facepunch.flatgrass",
+        "MaxPlayers": 8,
+        "GameSettings": {},
+        "Addons": "mbk.roleplay_chat#local;mbk.roleplay_hud#local;mbk.roleplay_tab#local;",
+        "PreLaunchCommand": "",
+        "PostLaunchCommand": ""
+      }
+    ],
+    "ParentPackage": ""
+  }
+}

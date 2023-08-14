@@ -1,0 +1,38 @@
+{
+    "Game.Joined": "has joined",
+	"Game.Disconnect": "has left",
+
+    "AtmScreen.Login.Title": "Press 'USE' to use the ATM",
+
+    "AtmScreen.Home.Title": "Welcome, ",
+
+    "AtmScreen.BankHome.Title": "Total Balance: ",
+    "AtmScreen.BankHome.Deposit": "Deposit",
+    "AtmScreen.BankHome.Withdraw": "Withdraw",
+    "AtmScreen.BankHome.Transfer": "Transfer",
+    "AtmScreen.BankHome.History": "History",
+    "AtmScreen.BankHome.EnterAmount": "Enter the amount using the keypad",
+
+    "AtmScreen.Error.Title": "An error has occurred",
+    "AtmScreen.Error.NoBankCard": "You don't have a bank card",
+    "AtmScreen.Error.OnlyDigits": "Please, enter only digits",
+    "AtmScreen.Error.InsufficientBalance": "Insufficient balance",
+
+    "AtmScreen.Success.Title": "The task has been acomplish succesfuly",
+
+    "Mainmenu.Navlink.Home": "Home",
+    "Mainmenu.Navlink.Inventory": "Inventory",
+    "Mainmenu.Navlink.Job": "Job",
+    "Mainmenu.Navlink.Site": "Website",
+    "Mainmenu.Navlink.Players": "Players",
+    "Mainmenu.Navlink.Ranking": "Ranking",
+    "Mainmenu.Navlink.Tickets": "Tickets",
+    "Mainmenu.Navlink.Account": "Account",
+
+    "CarDisplay.Navlink.Home": "Home",
+
+    "Zone.Default": "Walking..",
+    "Zone.Parking": "Parking",
+    "Zone.Highway": "Highway",
+    "Zone.Test": "This is a test"
+}

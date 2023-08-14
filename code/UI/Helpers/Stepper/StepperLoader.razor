@@ -1,0 +1,15 @@
+﻿@inherits Panel
+@namespace RP.UI.Helpers
+@attribute [StyleSheet]
+
+<root class="root">
+    <div class="loader"></div>
+    Please, wait ...
+</root>
+
+@code {
+    protected override void OnAfterTreeRender(bool firstTime)
+    {
+        base.OnAfterTreeRender(firstTime);
+    }
+}

@@ -1,0 +1,25 @@
+@import "UI/Styles/_vars.scss";
+
+button {
+	transition: all .2s ease-in;
+	transform: scale(1.0);
+	cursor: pointer;
+
+	&.disabled {
+		cursor: not-allowed;
+		background-color: rgba(crimson, 0.4);
+	}
+
+	&:hover:not(.disabled) {
+		transform: scale(1.05);
+	}
+
+	&.primary:not(.disabled) {
+		border: 1.5px solid white;
+		background-color: rgba(#3b5bb3, 0.4);
+	}
+
+	&.flat:not(.disabled) {
+		border: 2px solid white;
+	}
+}

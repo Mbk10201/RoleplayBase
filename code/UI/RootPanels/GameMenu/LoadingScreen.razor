@@ -1,0 +1,67 @@
+@using System
+@using Sandbox;
+@using Sandbox.UI;
+@using Sandbox.Menu;
+@attribute [StyleSheet]
+@inherits RootPanel
+@implements Sandbox.Menu.ILoadingScreenPanel
+@namespace RP.UI.RootPanels.GameMenu
+
+<root>
+
+    <div class="music">
+        <text>Introduction sound - By Binco</text>
+        <button @onclick=@(()=> SetVolume())><i>@(Volume ? "volume_up" : "volume_off")</i></button>
+    </div>
+
+    <div class="container">
+        <div class="wrapper"></div>
+        <div class="title">@(Game.Server.GameTitle is null ? Game.Menu.Package.Title : Game.Server.GameTitle)</div>
+        <div class="subtitle">@Progress.Title</div>
+    </div>
+
+
+    <div class="controls">
+        <div class="button" onclick="@Game.Menu.CancelLoading">
+            Cancel
+        </div>
+    </div>
+</root>
+
+@code
+{
+    public LoadingProgress Progress;
+    public bool Volume = true;
+    Sound Intro;
+
+    public void OnLoadingProgress( LoadingProgress progress )
+    {
+        Progress = progress;
+        StateHasChanged();
+    }
+
+    public override void OnDeleted()
+    {
+        Intro.Stop();
+        base.OnDeleted();
+    }
+
+    protected override void OnAfterTreeRender(bool firstTime)
+    {
+        base.OnAfterTreeRender(firstTime);
+
+        if (firstTime)
+        {
+            //Intro = Sound.FromScreen("ui.intro");
+        }
+    }
+
+    void SetVolume()
+    {
+        Volume = !Volume;
+        if (Volume)
+            Intro.SetVolume(1.0f);
+        else
+            Intro.SetVolume(0f);
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "Game.Joined": "a rejoint",
+	"Game.Disconnect": "a quitté",
+
+    "AtmScreen.Login.Title": "Appuyez sur 'Utiliser' afin d'utiliser l'ATM",
+
+    "AtmScreen.Home.Title": "Bienvenue, ",
+
+    "AtmScreen.BankHome.Title": "Balance totale: ",
+    "AtmScreen.BankHome.Deposit": "Dépot",
+    "AtmScreen.BankHome.Withdraw": "Retrait",
+    "AtmScreen.BankHome.Transfer": "Transfert",
+    "AtmScreen.BankHome.History": "Historique",
+    "AtmScreen.BankHome.EnterAmount": "Entrez le montant en utilisant le paver numérique",
+
+    "AtmScreen.Error.Title": "Une erreur s'est produite",
+    "AtmScreen.Error.NoBankCard": "Vous n'avez pas de carte bancaire",
+    "AtmScreen.Error.OnlyDigits": "Merci de n'entrer que des chiffres",
+    "AtmScreen.Error.InsufficientBalance": "Solde insuffisant",
+
+    "AtmScreen.Success.Title": "La tache s'est derouler comme prévue",
+
+    "Mainmenu.Navlink.Home": "Accueil",
+    "Mainmenu.Navlink.Inventory": "Inventaire",
+    "Mainmenu.Navlink.Job": "Métier",
+    "Mainmenu.Navlink.Site": "Site",
+    "Mainmenu.Navlink.Players": "Joueurs",
+    "Mainmenu.Navlink.Ranking": "Classement",
+    "Mainmenu.Navlink.Tickets": "Tickets",
+    "Mainmenu.Navlink.Account": "Compte",
+
+    "CarDisplay.Navlink.Home": "Accueil",
+
+    "Zone.Default": "En marche..",
+    "Zone.Parking": "Parking",
+    "Zone.Highway": "AutoRoute",
+    "Zone.Test": "Ceci est un test"
+}
